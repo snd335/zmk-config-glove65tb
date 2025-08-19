@@ -39,6 +39,8 @@
 &kp LEFT_SHIFT    &kp Z   &kp X             &kp C         &kp V         &kp B      &mo 5      &kp SINGLE_QUOTE  &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
 &mo 2             &trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &mkp LCLK  &kp SPACE  &kp SPACE         &mo 3                               &trans    &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
         number_layer {
