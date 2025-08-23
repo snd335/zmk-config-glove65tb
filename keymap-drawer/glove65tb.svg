@@ -404,6 +404,11 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
+<g class="combo combopos-0">
+<rect rx="6" ry="6" x="658" y="190" width="28" height="26" class="combo"/>
+<a href="#SCROLL">
+<text x="672" y="203" class="combo tap layer-activator">SCROLL</text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 398)" class="layer-NUM">
@@ -669,6 +674,11 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
+<g class="combo combopos-0">
+<rect rx="6" ry="6" x="658" y="190" width="28" height="26" class="combo"/>
+<a href="#SCROLL">
+<text x="672" y="203" class="combo tap layer-activator">SCROLL</text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 796)" class="layer-SYM">
@@ -940,6 +950,11 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
+<g class="combo combopos-0">
+<rect rx="6" ry="6" x="658" y="190" width="28" height="26" class="combo"/>
+<a href="#SCROLL">
+<text x="672" y="203" class="combo tap layer-activator">SCROLL</text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 1195)" class="layer-FUN">
@@ -1224,6 +1239,11 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
+<g class="combo combopos-0">
+<rect rx="6" ry="6" x="658" y="190" width="28" height="26" class="combo"/>
+<a href="#SCROLL">
+<text x="672" y="203" class="combo tap layer-activator">SCROLL</text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 1593)" class="layer-MOUSE">
@@ -1489,6 +1509,11 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
+<g class="combo combopos-0">
+<rect rx="6" ry="6" x="658" y="190" width="28" height="26" class="combo"/>
+<a href="#SCROLL">
+<text x="672" y="203" class="combo tap layer-activator">SCROLL</text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 1991)" class="layer-SCROLL">
@@ -1753,6 +1778,11 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
+<g class="combo combopos-0">
+<rect rx="6" ry="6" x="658" y="190" width="28" height="26" class="combo"/>
+<a href="#SCROLL">
+<text x="672" y="203" class="combo tap layer-activator">SCROLL</text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 2389)" class="layer-SNIPE">
@@ -2018,6 +2048,11 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
+<g class="combo combopos-0">
+<rect rx="6" ry="6" x="658" y="190" width="28" height="26" class="combo"/>
+<a href="#SCROLL">
+<text x="672" y="203" class="combo tap layer-activator">SCROLL</text>
+</a></g>
 </g>
 </g>
 </svg>
