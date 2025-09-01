@@ -57,7 +57,7 @@
 
 &msc_input_listener {
     speed_up {
-        layers = <FUNCTION>;
+        layers = <2>;
         input-processors = <&zip_wheel_scaler 3 1>;
     };
 };
