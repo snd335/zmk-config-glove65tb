@@ -1,14 +1,13 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 150
 
 #include <behaviors.dtsi>
-#include <behaviors/mouse_keys.dtsi>
-#include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/input_transform.h>
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
+#include <behaviors/rgbled_widget.dtsi>
 
 #define DEFAULT 0
 #define SYM     1
@@ -16,18 +15,6 @@
 #define MOUSE   3
 #define SCROLL  4
 #define SNIPE   5
-
-&lt {
-    tapping-term-ms = <240>;
-    flavor = "balanced";
-    quick-tap-ms = <150>;
-};
-
-&mt {
-    tapping-term-ms = <200>;
-    flavor = "tap-preferred";
-    quick-tap-ms = <150>;
-};
 
 &mmv {
     delay-ms = <20>;
@@ -55,13 +42,6 @@
     };
 };
 
-&msc_input_listener {
-    speed_up {
-        layers = <2>;
-        input-processors = <&zip_wheel_scaler 3 1>;
-    };
-};
-
 / {
     combos {
         compatible = "zmk,combos";
@@ -73,32 +53,16 @@
     };
 
     behaviors {
-        re_kp: sensor_rotate_kp {
+        sensor_rotate_kp: sensor_rotate_kp {
             compatible = "zmk,behavior-sensor-rotate-var";
             #sensor-binding-cells = <2>;
             bindings = <&kp>, <&kp>;
         };
 
-        mouse_scrl: mouse_wheel_scrl {
+        mouse_wheel_scroll: mouse_wheel_scroll {
             compatible = "zmk,behavior-sensor-rotate-var";
             #sensor-binding-cells = <2>;
             bindings = <&msc>, <&msc>;
-            tap-ms = <20>;
-        };
-
-        // 上下スクロール
-        scroll_encoder: scroll_encoder {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-            tap-ms = <20>;
-        };
-
-        // 上下スクロール（逆向き）
-        scroll_encoder_reverse: scroll_encoder_reverse {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
             tap-ms = <20>;
         };
     };
@@ -116,7 +80,7 @@
 &mo 2             &trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &mkp LCLK  &kp SPACE  &kp SPACE         &mo 3                               &trans    &trans
             >;
 
-            sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
+            sensor-bindings = <&mouse_wheel_scroll SCRL_UP SCRL_DOWN>;
         };
 
         number_layer {
@@ -151,7 +115,7 @@
 &trans  &trans  &trans  &trans  &trans  &mkp RCLK  &trans             &trans     &trans                                                    &trans            &trans
             >;
 
-            sensor-bindings = <&re_kp C_VOLUME_DOWN C_VOLUME_UP>;
+            sensor-bindings = <&sensor_rotate_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         mouse_layer {

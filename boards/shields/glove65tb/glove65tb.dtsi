@@ -139,3 +139,28 @@
         reg = <0>;
     };
 };
+
+/ {
+    leds {
+        compatible = "gpio-leds";
+
+        led_red: led_red {
+            gpios = <&gpio0 26 GPIO_ACTIVE_LOW>;  // RED P0.26
+            label = "LED RED";
+        };
+        led_green: led_green {
+            gpios = <&gpio0 30 GPIO_ACTIVE_LOW>;  // GREEN P0.30
+            label = "LED GREEN";
+        };
+        led_blue: led_blue {
+            gpios = <&gpio0 6 GPIO_ACTIVE_LOW>;   // BLUE P0.06
+            label = "LED BLUE";
+        };
+    };
+
+    aliases {
+        led-red = &led_red;
+        led-green = &led_green;
+        led-blue = &led_blue;
+    };
+};
