@@ -1,3 +1,5 @@
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 100
+
 #include <behaviors/mouse_keys.dtsi>
 #include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
@@ -11,7 +13,6 @@
 #define MOUSE   3
 #define SCROLL  4
 #define SNIPE   5
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 
 &lt {
     tapping-term-ms = <240>;
