@@ -56,7 +56,7 @@ layers:
   - /
   - \
   - SYM
-  - LANGUAGE 2
+  - Alt+`
   - LEFT WIN
   - LEFT ALT
   - SPACE
