@@ -19,8 +19,8 @@ layers:
   - E
   - R
   - T
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '['
+  - (
   - Y
   - U
   - I
@@ -33,8 +33,8 @@ layers:
   - D
   - F
   - G
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ']'
+  - )
   - H
   - J
   - K
