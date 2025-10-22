@@ -56,7 +56,7 @@ layers:
   - /
   - \
   - SYM
-  - INT KATAKANAHIRAGANA
+  - LANGUAGE 2
   - LEFT WIN
   - LEFT ALT
   - SPACE
