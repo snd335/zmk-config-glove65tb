@@ -55,7 +55,7 @@ layers:
   - .
   - /
   - \
-  - SYM
+  - FUN
   - Alt+`
   - LEFT WIN
   - LEFT ALT
@@ -65,7 +65,7 @@ layers:
   - BSPC
   - ENTER
   - {t: NUM, h: toggle}
-  - {t: FUN, h: toggle}
+  - {t: SYM, h: toggle}
   NUM:
   - {t: ▽, type: trans}
   - '7'
@@ -187,7 +187,7 @@ layers:
   - ','
   - RET
   - '='
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -253,7 +253,7 @@ layers:
   - '&mkp RCLK'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
