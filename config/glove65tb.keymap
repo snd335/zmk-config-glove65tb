@@ -77,11 +77,11 @@
         default_layer {
             label = "DEFAULT";
             bindings = <
-&kp ESC           &kp N1         &kp N2        &kp N3        &kp N4     &kp N5                                             &kp N6     &kp N7  &kp N8     &kp N9   &kp N0    &kp MINUS
-&kp TAB           &kp Q          &kp W         &kp E         &kp R      &kp T    &none                  &kp CAPSLOCK       &kp Y      &kp U   &kp I      &kp O    &kp P     &kp AT
-&kp LEFT_CONTROL  &kp A          &kp S         &kp D         &kp F      &kp G    &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET   &kp H      &kp J   &kp K      &kp L    &kp SEMI  &kp COLON
-&kp LEFT_SHIFT    &kp Z          &kp X         &kp C         &kp V      &kp B    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp N      &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp BACKSLASH
-&mo 3             &kp LA(GRAVE)  &kp LEFT_WIN  &kp LEFT_ALT  &kp SPACE  &kp DEL  &tog 4                 &kp BSPC           &kp ENTER                              &tog 1    &tog 2
+&kp ESC           &kp N1         &kp N2        &kp N3        &kp N4  &kp N5                                               &kp N6     &kp N7  &kp N8     &kp N9   &kp N0    &kp MINUS
+&kp TAB           &kp Q          &kp W         &kp E         &kp R   &kp T      &none                  &kp CAPSLOCK       &kp Y      &kp U   &kp I      &kp O    &kp P     &kp AT
+&kp LEFT_CONTROL  &kp A          &kp S         &kp D         &kp F   &kp G      &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET   &kp H      &kp J   &kp K      &kp L    &kp SEMI  &kp COLON
+&kp LEFT_SHIFT    &kp Z          &kp X         &kp C         &kp V   &kp B      &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp N      &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp BACKSLASH
+&tog 3            &kp LA(GRAVE)  &kp LEFT_WIN  &kp LEFT_ALT  &mo 4   &kp SPACE  &kp DEL                &kp BSPC           &kp ENTER                              &tog 1    &tog 2
             >;
 
             sensor-bindings = <&mouse_wheel_scroll SCRL_DOWN SCRL_UP>;
@@ -90,10 +90,10 @@
         number_layer {
             label = "NUM";
             bindings = <
-&trans  &kp N7  &kp N8   &kp N9     &kp MINUS  &kp FSLH                      &trans    &trans        &trans     &trans  &trans  &trans
-&trans  &kp N4  &kp N5   &kp N6     &kp PLUS   &kp ASTERISK  &trans  &trans  &trans    &kp UP_ARROW  &trans     &trans  &trans  &trans
-&trans  &kp N1  &kp N2   &kp N3     &kp ENTER  &kp EQUAL     &trans  &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &trans  &trans  &trans
-&trans  &kp N0  &kp DOT  &kp COMMA  &kp ENTER  &trans        &trans  &trans  &trans    &trans        &trans     &trans  &trans  &trans
+&trans  &kp N7  &kp N8   &kp N9     &kp MINUS  &kp FSLH                      &kp F5  &kp F6    &kp F7        &kp F8     &trans  &trans
+&trans  &kp N4  &kp N5   &kp N6     &kp PLUS   &kp ASTERISK  &trans  &trans  &trans  &trans    &kp UP_ARROW  &trans     &trans  &trans
+&trans  &kp N1  &kp N2   &kp N3     &kp ENTER  &kp EQUAL     &trans  &trans  &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &trans  &trans
+&trans  &kp N0  &kp DOT  &kp COMMA  &kp ENTER  &trans        &trans  &trans  &trans  &trans    &trans        &trans     &trans  &trans
 &trans  &trans  &trans   &trans     &trans     &trans        &trans  &trans  &trans                                     &trans  &trans
             >;
 
@@ -127,11 +127,11 @@
         mouse_layer {
             label = "MOUSE";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans     &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                   &trans  &trans
+&trans  &trans  &trans          &trans          &trans           &trans                  &trans  &trans     &trans     &trans     &trans  &trans
+&trans  &trans  &trans          &msc SCRL_UP    &trans           &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans  &trans
+&trans  &trans  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans  &trans
+&trans  &trans  &trans          &trans          &trans           &trans  &trans  &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans  &trans
+&trans  &trans  &trans          &trans          &trans           &trans  &trans  &trans  &trans                                   &trans  &trans
             >;
 
             sensor-bindings = <&mouse_wheel_scroll SCRL_DOWN SCRL_UP>;
