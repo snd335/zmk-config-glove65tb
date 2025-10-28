@@ -26,36 +26,36 @@ layers:
   - I
   - O
   - P
-  - '@'
+  - '['
   - LEFT CONTROL
   - A
   - S
   - D
   - F
   - G
-  - (
-  - '['
+  - '*'
+  - ']'
   - H
   - J
   - K
   - L
   - ;
-  - ':'
+  - ''''
   - LEFT SHIFT
   - Z
   - X
   - C
   - V
   - B
-  - )
-  - ']'
+  - (
+  - \
   - N
   - M
   - ','
   - .
   - /
-  - \
-  - {t: FUN, h: toggle}
+  - '='
+  - '='
   - Ctl+SPACE
   - LEFT WIN
   - LEFT ALT
