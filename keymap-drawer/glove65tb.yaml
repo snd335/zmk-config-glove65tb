@@ -56,7 +56,7 @@ layers:
   - /
   - \
   - {t: FUN, h: toggle}
-  - Alt+`
+  - Ctl+SPACE
   - LEFT WIN
   - LEFT ALT
   - MOUSE
