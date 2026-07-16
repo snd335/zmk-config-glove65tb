@@ -55,7 +55,7 @@ layers:
   - .
   - /
   - '='
-  - '='
+  - {t: FUN, h: toggle}
   - Ctl+SPACE
   - LEFT WIN
   - LEFT ALT
